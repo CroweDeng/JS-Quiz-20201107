@@ -18,12 +18,12 @@ function  printStars2(count) {
       // todo...
       let str = '';
       let space = ' ';
-      let i, j, s, h;
+      let i, j, h;
 
       for (i = 1; i <= count; i++) {
         // console.log('count', count);
         
-        for (h = 5; h > i; h--) {
+        for (h = count ; h > i; h--) {
           // console.log('h', h);
           str = str + ' ';
         }
@@ -36,3 +36,5 @@ function  printStars2(count) {
       }
       console.log(str);
     }
+
+    printStars2(5);
